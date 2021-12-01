@@ -1,0 +1,6 @@
+add_files: [
+  "$(DIR)/Nvim.cpp"
+  "$(DIR)/Type.cpp"
+]
+
+source: "$(DIR)/types/MIConfig"

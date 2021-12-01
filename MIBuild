@@ -1,0 +1,17 @@
+project: {
+  name "nvimim"
+  version "2021"
+}
+
+set_output: "nvimim"
+set_build_directory: "$(DIR)/build"
+set_language: CXX
+set_kind: EXECUTABLE
+set_compiler: LLVM
+set_linker: LLVM
+
+add_include_path: [ "$(DIR)/include" ]
+
+add_cflags: [ CXX ], [ "-DME_DEBUG" "-g" "-Wall" "-Wextra" "-std=c++20" ]
+
+source: "$(DIR)/src/MIConfig"

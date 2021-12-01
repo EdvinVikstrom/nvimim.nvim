@@ -1,0 +1,3 @@
+source: "$(DIR)/nvimim/MIConfig"
+source: "$(DIR)/nvim/MIConfig"
+source: "$(DIR)/mpack/MIConfig"
